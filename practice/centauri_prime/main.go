@@ -19,9 +19,9 @@ func getRuler(k string) string {
 	last := k[len(k)-1]
 
 	switch last {
-	case 'a', 'e', 'i', 'o', 'u':
+	case 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U':
 		return "Alice"
-	case 'y':
+	case 'y', 'Y':
 		return "nobody"
 	default:
 		return "Bob"
